@@ -16,4 +16,10 @@ class AboutPageTest extends TestCase
         $this->visit('/about')
              ->see('Vihaara - Travel planner');
     }
+
+    public function testRedirectToMothership()
+    {
+        $this->visit('/about')->click('mothership')
+             ->see('mothership')->seePageIs('/mothership');
+    }
 }

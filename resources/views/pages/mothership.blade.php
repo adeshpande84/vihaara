@@ -12,11 +12,9 @@
 
         <div class="content">
             <div class="title m-b-md">
-                Vihaara - Travel planner
+                Mothership
             </div>
-            <div class="mothership-link">
-                <a name="mothership" href="/mothership">Mothership</a>
-            </div>
+            
         </div>
     </div>
 @stop
