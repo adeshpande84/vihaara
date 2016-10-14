@@ -16,3 +16,5 @@ Route::get('/', 'PagesController@home');
 Route::get('/about','PagesController@about');
 
 Route::get('/mothership','PagesController@mothership');
+
+Route::get('/cities','CityController@index');
