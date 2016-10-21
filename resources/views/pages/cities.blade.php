@@ -15,7 +15,7 @@
                 Cities
             </div>
             @foreach($popularCities as $city)
-                <li>{{$city->name}}</li>
+                <li>{{$city->name}}, {{$city->country()->first()->name}}</li>
             @endforeach
         </div>
     </div>
