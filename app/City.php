@@ -19,4 +19,9 @@ class City extends Model
     {
     	return $query->orderBy('views','desc')->take($take)->get();
     }
+
+    public function country()
+    {
+        return $this->belongsTo(Country::class);
+    }
 }
