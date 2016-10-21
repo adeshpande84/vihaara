@@ -12,7 +12,7 @@ class City extends Model
      * @var array
      */
     protected $fillable = [
-        'name'
+        'name','views','likes','country_id'
     ];
 
     public function scopePopular($query, $take=3)
