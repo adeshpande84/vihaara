@@ -11,12 +11,14 @@
         @endif
 
         <div class="content">
-            <div class="title m-b-md">
+            <h1>
                 Cities
-            </div>
-            @foreach($popularCities as $city)
-                <li>{{$city->name}}, {{$city->country()->first()->name}}</li>
-            @endforeach
+            </h1>
+            <ul class="list-group">
+                @foreach($popularCities as $city)
+                    <li class="list-group-item">{{$city->name}}, {{$city->country()->first()->name}}</li>
+                @endforeach
+            </ul>
         </div>
     </div>
 @stop
