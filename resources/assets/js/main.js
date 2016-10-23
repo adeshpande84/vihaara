@@ -1,11 +1,7 @@
-class Person {
-	constructor(name) {
-		this.name = name;
-	}
+import { TaskCollection, Task } from './TaskCollection';
+import { Person } from './Person';
 
-	greet() {
-		return "Hello " + this.name;
-	}
-}
 
-console.log(new Person('User').greet());
+console.log(new Person({name: 'User', age: 24}).greet());
+
+new TaskCollection([new Task, new Task, new Task]).log();
