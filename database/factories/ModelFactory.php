@@ -29,3 +29,11 @@ $factory->define(App\City::class, function (Faker\Generator $faker) {
         
     ];
 });
+
+$factory->define(App\Country::class, function (Faker\Generator $faker) {
+    
+    return [
+        'name' => $faker->country,
+        
+    ];
+});

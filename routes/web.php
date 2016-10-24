@@ -18,3 +18,7 @@ Route::get('/about','PagesController@about');
 Route::get('/mothership','PagesController@mothership');
 
 Route::get('/cities','CityController@index');
+
+Route::get('/countries','CountryController@index');
+
+Route::get('/countries/{country}','CountryController@show')->name('countryShow');
