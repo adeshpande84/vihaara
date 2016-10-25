@@ -12,7 +12,6 @@ class CountryController extends Controller
 	public function index()
 	{
 		$countries = Country::popular();
-		
 		return view('pages.country.index',compact('countries'));
 	}
 
@@ -21,5 +20,11 @@ class CountryController extends Controller
 		$cities = $country->cities()->get();
 		return view('pages.country.show',compact('country','cities'));
 	}
+
+	public function search()
+	{
+		
+		return view('pages.country.search');
+	}	
 
 }
